@@ -8,19 +8,15 @@
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import pandas as pd
+import statistics as st
 
 radiusMillimeters = [10,15,20,25,30,35,40,45,50,55,60,65,70]
-channel1 = pd.Series([1,2,3,4,5,6,7,8,9,10,11,12,13], index=radiusMillimeters)
-channel2 = pd.Series([1,2,3,4,5,6,7,8,9,10,11,12,13], index=radiusMillimeters)
-channel3 = pd.Series([1,2,3,4,5,6,7,8,9,10,11,12,13], index=radiusMillimeters)
+channelA = np.array([(18.2,15.6,12.6,11.5,9.1,8.8,7.5,6.7,5.7,4.9,4.0,3.1,2.3),(radiusMillimeters)])
+channelB = np.array([(16.6,14.1,11.6,10.0,8.8,7.5,6.5,5.6,5.1,4.3,3.7,3.2,2.7),(radiusMillimeters)])
+channelC = np.array([(16.0,13.5,11.8,9.5,8.4,7.3,6.4,5.4,4.6,4.1,3.5,3.1,2.7),(radiusMillimeters)])
 
-dataTotal = pd.DataFrame(data=(channel1, channel2, channel3)).transpose()
-meanVoltage = dataTotal.mean(axis=1)
-changeVoltage = meanVoltage.diff()
+dataTotal = np.array([(channel1),(channel2),(channel3)])
 
-electricField = -1*(changeVoltage/0.005)
-
-
+for i in dataTotal[0,2,4]
 
 
