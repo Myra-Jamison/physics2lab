@@ -102,4 +102,3 @@ plt.annotate('Error in vertical intercept = {value:.{digits}E}'.format(value=db,
              (xpos, ypos[3]), xycoords='axes fraction')
 
 plt.show()
-print('m')
