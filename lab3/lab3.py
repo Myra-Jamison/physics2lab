@@ -34,7 +34,7 @@ d_timeDischargingExperiment2 = np.std(timeDischargingExperiment2)/np.sqrt(len(ti
 resistanceMeasured = 504.0
 capacitance = 53.2
 
-tauTheoretical = 504*53.2
+tauTheoretical = 504000*0.000053
 d_tauTheoretical = tauTheoretical*np.sqrt((1/504)**2+
                                           (0.1/53.2)**2)
 
